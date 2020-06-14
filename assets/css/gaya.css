@@ -1,0 +1,179 @@
+  	.box1, .box2 , .box3{
+  		position: fixed;
+  		z-index: 2;
+  		cursor: pointer;
+  		display: inline-block;
+  	}
+  	.box1 a, .box2 a, .box3 a{
+  		color: white;
+  	}
+  	.box1 a:hover, .box2 a:hover, .box3 a:hover{
+  		color: darkblue;
+  	}
+  	.box1 i{
+  		left: 10px;
+  		bottom: 25%;
+  	}
+  	.box2 i{
+  		left: 10px;
+  		bottom: 38%;
+  	}
+  	.box3 i{
+  		left: 10px;
+  		bottom: 51%;
+  	}
+    .to_top{
+    background:yellow;
+    border-radius: 50%;
+    color: green;
+    display: inline-block;
+    padding: 6px 10px;
+    position: fixed;
+    right: 10px;
+    cursor: pointer;
+    bottom: 10px;
+    font-weight: bold;
+    z-index: 2;}
+    .navbar{
+    	text-transform: uppercase;
+    	font-size: 20px;
+    	font-weight: bold;
+    }
+    .dropdown-item:hover{
+    	background-color: lightgreen;
+    }
+    .xp{
+    	background: lightgreen;
+    	color: white;
+    }
+    .xp p:hover{
+    	color: black;
+    }
+/*CSS Loading*/
+
+/*CSS Galeri fourth section*/
+.images1, .images2, .images3, .images4, .images5, .images6,{
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(213, 255, 128,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+}
+
+.images1:hover .overlay1, .images2:hover .overlay2, .images3:hover .overlay3, .images4:hover .overlay4,
+.images5:hover .overlay5, .images6:hover .overlay6
+{
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*Carousel content*/
+[data-toggle="collapse"]:after {
+display: inline-block;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+  transform: rotate(90deg) ;
+  transition: all linear 0.25s;
+  float: right;
+  }   
+[data-toggle="collapse"].collapsed:after {
+  transform: rotate(0deg) ;
+}
+/*CSS Product multi carousel*/
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+        /*collapse example*/
+
+      #left_bar > li{
+        margin-bottom: 10px;
+        font-size: 17px;
+        position: relative;
+      }
+
+      #left_bar li a{
+        color: #535353;
+        width: 100%;
+      }
+
+      #left_bar li a:hover, #left_bar li a:active, #left_bar li a:focus{
+        color: #9a1e23;
+        text-decoration: none;
+      }
+
+      #left_bar > li > a:after{
+        content: attr(alt);
+        color: #000;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .left_mune_active {
+        color: #9a1e23 !important;
+        text-decoration: none;
+      }
+
+      .sidebar_detail:after{
+        content: '+';
+        color: #000;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px 10px;
+      }
+
+      a.sidebar_detail:active:after, a.sidebar_detail:focus:after {
+          content: '-';
+      }
+
+
+
+      .panel {
+        margin: 0;
+        border: 0px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.0);
+      }
